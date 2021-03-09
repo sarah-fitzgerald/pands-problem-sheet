@@ -21,17 +21,13 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 
 
-<!-- PROJECT LOGO -->
+<!-- Header -->
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
-  <h3 align="center">pands-prblem-sheet - Sarah Fitzgerald - G00398363</h3>
+  <h3 align="center">pands-problem-sheet - Sarah Fitzgerald - G00398363</h3>
 
-  <p align="center">
-    This README explains the code used to solve weekly tasks assigned from the Programming and Scriptin module for the postgraduate diploma in Computer Science with Data Analytics at GMIT
+This README explains the code used to solve weekly tasks assigned from the Programming and Scripting module for the postgraduate diploma in Computer Science with Data Analytics at GMIT
     <br />
   </p>
 </p>
@@ -42,13 +38,13 @@
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
-    <li><a href="#Task 1">Task 1</a></li>
-    <li><a href="#Task 2">Task 2</a></li>
-    <li><a href="#Task 3">Task 3</a></li>
-    <li><a href="#Task 4">Task 4</a></li>
-    <li><a href="#Task 5">Task 5</a></li>
-    <li><a href="#Task 6">Task 6</a></li>
-    <li><a href="#Task 7">Task 7</a></li>
+    <li><a href="#Task 1 bmi.py">Task 1</a></li>
+    <li><a href="#Task 2 second string.py">Task 2</a></li>
+    <li><a href="#Task 3 collatz.py">Task 3</a></li>
+    <li><a href="#Task 4 weekday.py">Task 4</a></li>
+    <li><a href="#Task 5 squareroot.py">Task 5</a></li>
+    <li><a href="#Task 6 es.py moby-dick-txt">Task 6</a></li>
+    <li><a href="#Task 7 plottask.py">Task 7</a></li>
     <li><a href="#Task 8">Task 8</a></li>
   </ol>
 </details>
@@ -56,19 +52,19 @@
 
 
 <!-- Task 1 -->
-## Task 1
+## Task 1 bmi.py
 
 Write a program that calculates somebody's Body Mass Index (BMI). Call the file bmi.py The inputs are the person's height in centimetres and weight in kilograms. The output is their weight divided by their height in metres squared:
 
 ## Code
 
-  height = float(input("Enter height (cm): "))
-  weight = float(input("Enter *weight (kg): "))
+    height = float(input("Enter height (cm): "))
+    weight = float(input("Enter *weight (kg): "))
 
-  metresquared = (height/100) ** 2
-  BMI = round (weight / metresquared, 2)
+    metresquared = (height/100) ** 2
+    BMI = round (weight / metresquared, 2)
 
-  print ("BMI is {}".format(BMI))
+    print ("BMI is {}".format(BMI))
 
 
 ### Explanation of code
@@ -79,18 +75,15 @@ User is prompted to inter height and weight as an float. After input, weight is 
 
 1.stackoverflow: https://stackoverflow.com/questions/27864750/bmi-calculator-always-return-0-python
 
-<!-- Taskl 2 -->
-## Task 2
+<!-- Task 2 -->
+## Task 2 secondstring.py
 
 Write a program that takes asks a user to input a string and outputs every second letter in reverse order.
 
 ### Code
 
-This is an example of how to list things you need to use the software and how to install them.
-
-  sentence = str(input( "Please enter a sentence: " )) [::-1] 
-  print (sentence[::2])
-
+    sentence = str(input( "Please enter a sentence: " )) [::-1] 
+    print (sentence[::2])
 
 ### Explanation of code
 
@@ -101,7 +94,7 @@ User is prompted to input a string, then [::-1] reverses the string [REF 1.]. [:
 2. stackoverflow: https://stackoverflow.com/questions/20847205/program-to-extract-every-alternate-letters-from-a-string-in-python/20847220
 
 <!-- Task 3 -->
-## Task 3
+## Task 3 collatz.py
 
 Write a program that asks the user to input any positive integer and outputs the successive values of the following calculation.
 
@@ -142,17 +135,17 @@ An example of running this program on a Thursday is given below.
 
 ### Code
 
-  import datetime
+    import datetime
 
-  day = datetime.datetime.today().weekday()
+    day = datetime.datetime.today().weekday()
 
-    if day < 5:
-      print ("Yes, unfortunately today is a weekday")
+        if day < 5:
+         print ("Yes, unfortunately today is a weekday")
 
-    else:
-      print ("It is the weekend, yay!")
+        else:
+         print ("It is the weekend, yay!")
 
-  print (day)
+    print (day)
 
 ### Explanation of code
 Imported the date object in python [REF 1.], then used the date.weekday() object to return the day of the week as an interger, in this case Monday is 0, Tuesday is 1, Wednesday is 2, Thursday is 3, Friday is 4, Saturday is 5, Sunday is 6 [REF 2.]. If the integer return is between 0-4 then it will print "Yes, unfortunately today is a weekday," but if it returns 5 or 6 it will print "It is the weekend, yay!"
@@ -161,6 +154,33 @@ Imported the date object in python [REF 1.], then used the date.weekday() object
 1. Python.org: https://docs.python.org/3/library/datetime.html#datetime.date.weekday
 2.https://stackoverflow.com/questions/29384696/how-to-find-current-day-is-weekday-or-weekends-in-python
 
+<!-- Task 5 -->
+## Task 5 squareroot.py
 
+### Code
+
+### Explanation of code
+
+### References
+
+<!-- Task 6 -->
+## Task 6 es.py moby-dick-txt
+
+### Code
+
+### Explanation of code
+
+### References
+
+<!-- Task 7 -->
+## Task 7 plottask.py
+
+### Code
+
+### Explanation of code
+
+### References
+
+## Template for README
 
 https://github.com/othneildrew/Best-README-Template.git
