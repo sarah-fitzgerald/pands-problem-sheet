@@ -2,8 +2,8 @@
 #Author: Sarah Fitzgerald
 
 #Inputs for height (cm) and weight (kg) from user
-height = int(input("Enter height (cm): "))
-weight = int(input("Enter weight (kg): "))
+height = float(input("Enter height (cm): "))
+weight = float(input("Enter weight (kg): "))
 
 #Maths conversion - cm to m²
 metresquared = (height/100) ** 2
