@@ -199,10 +199,41 @@ Created a function to return the letter count. After this, it will open the file
 ## Task 7 plottask.py
 
 ### Code
+        import matplotlib.pyplot as plt
+        mport numpy as np
+
+        x = np.arange(0.0, 4.0) 
+
+        x = x #This is f(x)
+        y = x ** 2 #This is g(x)
+        z = x ** 3 #This is h(x)
+
+        plt.plot (x, linestyle = 'dashed', label = 'f(x)', color ='r') 
+        plt.plot (y, linestyle = 'dashed', label = 'g(x)', color = 'b') 
+        plt.plot (z, linestyle = 'dashed', label = 'h(x)', color = 'g')
+
+        plt.xlim(0.0, 3.5) 
+        plt.ylim(0.0, 30.0) 
+
+        plt.xlabel ('X-Axis') 
+        plt.ylabel ('Y-Axis') 
+
+        plt.title('f(x)=x, g(x)=x2 and h(x)=x3') 
+
+        plt.legend() 
+        plt.show()
+
+![Getting Started]()
 
 ### Explanation of code
+Imported numpy as "np" and matplotlib.pyplot as "plt." Then defined the x-axis valuesand the range was from 0.0 to 4.0. Next defined the y-axis values as x,y,z. Then plotted the values using plt.plot. Formatted each point by linestyle, label, and colour. Then set limits for the x-axis and y-axis that appear on the graph and added a title to the graph. Finally the graph can be represented
 
 ### References
+1. https://jakevdp.github.io/PythonDataScienceHandbook/04.01-simple-line-plots.html
+2. https://www.tutorialspoint.com/numpy/numpy_matplotlib.htm
+3. https://matplotlib.org/stable/tutorials/introductory/pyplot.html
+4. https://stackoverflow.com/questions/17941083/how-to-label-a-line-in-matplotlib-python/17942066
+5. https://www.geeksforgeeks.org/graph-plotting-in-python-set-1/
 
 ## Template for README
 
