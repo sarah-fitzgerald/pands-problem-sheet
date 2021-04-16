@@ -93,22 +93,22 @@ At each step calculate the next value by taking the current value and, if it is 
 Have the program end if the current value is one.
 
 ### Code
-    number = int(input("Please enter a positve integer: "))
+        x = int(input("Please enter a positive number: ")) 
 
-    x = []
-    x.append(number)
+        def collatz(x): 
+         if x % 2 == 0: 
+                return x // 2 
+           
+            else: 
+                return x * 3 + 1
 
-    while (number > 1) and (number != 0):
+        while x != 1: 
 
-        if (number % 2 == 1):
-            number = number // 2
-
-        elif (number % 2 == 1):
-            number = 3 * number + 1
-
-    print (x)
+            print (x)
+            x = collatz(int(x))
 
 ### Explanation of code
+Asks user to input a positive integer, here (x) is defined as a integer. Then the progeram checks if the number (x) is greater than 0. Next within the collatz function, if the remainder number is divided by 2 is 0 then it is even and it is returned to the function or else if the  number divided by 2 is not 0 then it is odd and the returned result is * 3 + 1 and returned to the function. 
 
 ### References
 1. W3Schools: https://www.w3resource.com/python-exercises/challenges/1/python-challenges-1-exercise-23.php
@@ -163,7 +163,7 @@ Imported the date object in python [REF 1.], then used the date.weekday() object
     print (round(y, 1)) 
 
 ### Explanation of code
-Based code off of [Ref.1], the Newton Method is applied to an inputted positive number. After which a set of iteration is run to find the approminate squareroot. The outputted number is rounded to 1 decimal place to match the example given in the exercise [Ref. 2]
+Based code off of [Ref.1], the Newton Method is applied to an inputted positive number. After which a set of iteration is run to find the approminate squareroot. The outputted number is rounded to 1 decimal place to match the example given in the exercise [Ref.2]
 
 ### References
 1. https://medium.com/@sddkal/newton-square-root-method-in-python-270853e9185d
