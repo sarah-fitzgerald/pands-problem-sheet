@@ -223,7 +223,7 @@ Created a function to return the letter count. After this, it will open the file
         plt.legend() 
         plt.show()
 
-![Getting Started]()
+![Graph](https://github.com/sarah-fitzgerald/pands-problem-sheet/blob/1009e5eca133d7994de69841fb99da22b60f1a52/plottask.py.png)
 
 ### Explanation of code
 Imported numpy as "np" and matplotlib.pyplot as "plt." Then defined the x-axis valuesand the range was from 0.0 to 4.0. Next defined the y-axis values as x,y,z. Then plotted the values using plt.plot. Formatted each point by linestyle, label, and colour. Then set limits for the x-axis and y-axis that appear on the graph and added a title to the graph. Finally the graph can be represented
