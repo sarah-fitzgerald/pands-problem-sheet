@@ -24,20 +24,11 @@ This README explains the code used to solve weekly tasks assigned from the Progr
 
 
 
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+
   <ol>
-    <li><a href="#Task 1 bmi.py">Task 1 bmi.py</a></li>
-    <li><a href="#Task 2 secondstring.py">Task 2 secondstring.py</a></li>
-    <li><a href="#Task 3 collatz.py">Task 3 collatz.py</a></li>
-    <li><a href="#Task 4 weekday.py">Task 4 weekday.py</a></li>
-    <li><a href="#Task 5 squareroot.py">Task 5 squareroot.py</a></li>
-    <li><a href="#Task 6 es.py moby-dick-txt">Task 6 es.py moby-dick-txt</a></li>
-    <li><a href="#Task 7 plottask.py">Task 7 plotttask</a></li>
-    <li><a href="#Task 8">Task 8</a></li>
+    
   </ol>
-</details>
+
 
 
 
@@ -223,7 +214,7 @@ Created a function to return the letter count. After this, it will open the file
         plt.legend() 
         plt.show()
 
-![Graph](https://github.com/sarah-fitzgerald/pands-problem-sheet/blob/1009e5eca133d7994de69841fb99da22b60f1a52/plottask.py.png)
+![Graph](https://github.com/sarah-fitzgerald/pands-problem-sheet/blob/3e08b7eb73ed0dae9c099ac00c7668c231936cff/plottask.py.png)
 
 ### Explanation of code
 Imported numpy as "np" and matplotlib.pyplot as "plt." Then defined the x-axis valuesand the range was from 0.0 to 4.0. Next defined the y-axis values as x,y,z. Then plotted the values using plt.plot. Formatted each point by linestyle, label, and colour. Then set limits for the x-axis and y-axis that appear on the graph and added a title to the graph. Finally the graph can be represented
