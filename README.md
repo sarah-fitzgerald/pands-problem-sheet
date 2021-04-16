@@ -137,6 +137,7 @@ Imported the date object in python, then used the date.weekday() object to retur
 
 <!-- Task 5 -->
 ## Task 5 squareroot.py
+Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.
 
 ### Code
     def newton_method (number, number_iters = 500):
@@ -164,6 +165,9 @@ The Newton Method is applied to an inputted positive number, after which a set o
 
 <!-- Task 6 -->
 ## Task 6 es.py moby-dick-txt
+Write a program that reads in a text file and outputs the number of e's it contains.
+
+The program should take the filename from an argument on the command line.
 
 ### Code
         def letterFrequency(filename, letter): 
@@ -188,6 +192,7 @@ Created a function to return the letter count. After this, it will open the file
 
 <!-- Task 7 -->
 ## Task 7 plottask.py
+Write a program called plottask.py that displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the one set of axes.
 
 ### Code
         import matplotlib.pyplot as plt
