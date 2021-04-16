@@ -4,19 +4,18 @@
 
 #https://www.w3resource.com/python-exercises/challenges/1/python-challenges-1-exercise-23.php
 
-number = int(input("Please enter a positve integer: "))
+def collatz(x): 
+   while n != 1:
+       print(x, end = ' ')
 
-x = []
-x.append(number)
+       if 
+           x = x // 2
 
-while (number > 1) and (number != 0):
+        else x & 1:
+            n = 3 * x + 1
 
-    if (number % 2 == 1):
-        number = number // 2
+x = float(input("Please enter a positive number: "))
 
-    elif (number % 2 == 1):
-        number = 3 * number + 1
+y =  (collatz(x))
 
-print (x)
-
-
+print (y)

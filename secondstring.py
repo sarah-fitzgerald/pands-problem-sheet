@@ -1,4 +1,5 @@
 #This program takes user string inputs and outputs every second letter in reverse order
+#Sentence for weekly task: The quick brown fox jumps over the lazy dog.
 #Author: Sarah Fitzgerald
 
 #Asks user to input a sentence as a string

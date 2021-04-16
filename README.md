@@ -11,16 +11,6 @@
 -->
 
 
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
-
-
 <!-- Header -->
 <br />
 <p align="center">
@@ -38,13 +28,13 @@ This README explains the code used to solve weekly tasks assigned from the Progr
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
-    <li><a href="#Task 1 bmi.py">Task 1</a></li>
-    <li><a href="#Task 2 second string.py">Task 2</a></li>
-    <li><a href="#Task 3 collatz.py">Task 3</a></li>
-    <li><a href="#Task 4 weekday.py">Task 4</a></li>
-    <li><a href="#Task 5 squareroot.py">Task 5</a></li>
-    <li><a href="#Task 6 es.py moby-dick-txt">Task 6</a></li>
-    <li><a href="#Task 7 plottask.py">Task 7</a></li>
+    <li><a href="#Task 1 bmi.py">Task 1 bmi.py</a></li>
+    <li><a href="#Task 2 secondstring.py">Task 2 secondstring.py</a></li>
+    <li><a href="#Task 3 collatz.py">Task 3 collatz.py</a></li>
+    <li><a href="#Task 4 weekday.py">Task 4 weekday.py</a></li>
+    <li><a href="#Task 5 squareroot.py">Task 5 squareroot.py</a></li>
+    <li><a href="#Task 6 es.py moby-dick-txt">Task 6 es.py moby-dick-txt</a></li>
+    <li><a href="#Task 7 plottask.py">Task 7 plotttask</a></li>
     <li><a href="#Task 8">Task 8</a></li>
   </ol>
 </details>
@@ -73,7 +63,7 @@ User is prompted to inter height and weight as an float. After input, weight is 
 
 ### Reference
 
-1.stackoverflow: https://stackoverflow.com/questions/27864750/bmi-calculator-always-return-0-python
+1. stackoverflow: https://stackoverflow.com/questions/27864750/bmi-calculator-always-return-0-python
 
 <!-- Task 2 -->
 ## Task 2 secondstring.py
@@ -121,7 +111,7 @@ Have the program end if the current value is one.
 ### Explanation of code
 
 ### References
-1.W3Schools: https://www.w3resource.com/python-exercises/challenges/1/python-challenges-1-exercise-23.php
+1. W3Schools: https://www.w3resource.com/python-exercises/challenges/1/python-challenges-1-exercise-23.php
 
 
 <!-- Task 4 -->
@@ -152,16 +142,34 @@ Imported the date object in python [REF 1.], then used the date.weekday() object
 
 ### References
 1. Python.org: https://docs.python.org/3/library/datetime.html#datetime.date.weekday
-2.https://stackoverflow.com/questions/29384696/how-to-find-current-day-is-weekday-or-weekends-in-python
+2. https://stackoverflow.com/questions/29384696/how-to-find-current-day-is-weekday-or-weekends-in-python
 
 <!-- Task 5 -->
 ## Task 5 squareroot.py
 
 ### Code
+    def newton_method (number, number_iters = 500):
+        a = float(number) 
+
+       for i in range (number_iters) :
+            number = 0.5 * (number + a /number) 
+
+        return number
+
+    x = float(input("Please enter a positive number: ")) 
+
+    y = (newton_method(x)) 
+
+    print (round(y, 1)) 
 
 ### Explanation of code
+Based code off of [Ref.1], the Newton Method is applied to an inputted positive number. After which a set of iteration is run to find the approminate squareroot. The outputted number is rounded to 1 decimal place to match the example given in the exercise [Ref. 2]
 
 ### References
+1. https://medium.com/@sddkal/newton-square-root-method-in-python-270853e9185d
+2. https://stackoverflow.com/questions/3400965/getting-only-1-decimal-place
+3. https://www.youtube.com/watch?v=2GrfaB88w4M 
+4. https://en.wikipedia.org/wiki/Newton%27s_method
 
 <!-- Task 6 -->
 ## Task 6 es.py moby-dick-txt
