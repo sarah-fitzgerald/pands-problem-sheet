@@ -59,7 +59,7 @@ Write a program that calculates somebody's Body Mass Index (BMI). Call the file 
 
 ### Explanation of code
 
-User is prompted to inter height and weight as an float. After input, weight is divided by height in meters to the power of 2 [REF 1.]. After which the output it printed.
+User is prompted to inter height and weight as an float. After input, weight is divided by height in meters to the power of 2. After which the output it printed.
 
 ### Reference
 
@@ -77,7 +77,7 @@ Write a program that takes asks a user to input a string and outputs every secon
 
 ### Explanation of code
 
-User is prompted to input a string, then [::-1] reverses the string [REF 1.]. [::2] prints our every second letter [REF 2.]
+User is prompted to input a string, then [::-1] reverses the string.. [::2] prints our every second letter.
 
 ### Reference
 1. W3Schools: https://www.w3schools.com/python/python_howto_reverse_string.asp
@@ -138,7 +138,7 @@ An example of running this program on a Thursday is given below.
     print (day)
 
 ### Explanation of code
-Imported the date object in python [REF 1.], then used the date.weekday() object to return the day of the week as an interger, in this case Monday is 0, Tuesday is 1, Wednesday is 2, Thursday is 3, Friday is 4, Saturday is 5, Sunday is 6 [REF 2.]. If the integer return is between 0-4 then it will print "Yes, unfortunately today is a weekday," but if it returns 5 or 6 it will print "It is the weekend, yay!"
+Imported the date object in python, then used the date.weekday() object to return the day of the week as an interger, in this case Monday is 0, Tuesday is 1, Wednesday is 2, Thursday is 3, Friday is 4, Saturday is 5, Sunday is 6. If the integer return is between 0-4 then it will print "Yes, unfortunately today is a weekday," but if it returns 5 or 6 it will print "It is the weekend, yay!"
 
 ### References
 1. Python.org: https://docs.python.org/3/library/datetime.html#datetime.date.weekday
@@ -163,7 +163,7 @@ Imported the date object in python [REF 1.], then used the date.weekday() object
     print (round(y, 1)) 
 
 ### Explanation of code
-Based code off of [Ref.1], the Newton Method is applied to an inputted positive number. After which a set of iteration is run to find the approminate squareroot. The outputted number is rounded to 1 decimal place to match the example given in the exercise [Ref.2]
+The Newton Method is applied to an inputted positive number, after which a set of iteration is run to find the approminate squareroot. The outputted number is rounded to 1 decimal place to match the example given in the exercise.
 
 ### References
 1. https://medium.com/@sddkal/newton-square-root-method-in-python-270853e9185d
@@ -175,10 +175,25 @@ Based code off of [Ref.1], the Newton Method is applied to an inputted positive 
 ## Task 6 es.py moby-dick-txt
 
 ### Code
+        def letterFrequency(filename, letter): 
+
+            file = open(filename, "r") 
+
+            text = file.read() 
+
+            return text.count(letter) letters
+
+        filename = str(input("Please choose a file: ")) 
+
+        print (letterFrequency(filename, "e")) 
 
 ### Explanation of code
+Created a function to return the letter count. After this, it will open the file in read mode and then the content of the file is stored as a varible. Next, used the count() method to count the number of letters. Then user is asked to input the name of the file as a string with which they would like to count the number of e's in it. Finally, the number of e's contained in the text is printed.
 
 ### References
+1. https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/
+2. https://www.w3schools.com/python/ref_list_count.asp 
+3. https://stackoverflow.com/questions/22694244/counting-specific-letters-or-symbols-in-a-text-file-in-python
 
 <!-- Task 7 -->
 ## Task 7 plottask.py

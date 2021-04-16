@@ -6,4 +6,4 @@
 sentence = str(input( "Please enter a sentence: " )) [::-1] #[::-1] reverses the sentence - https://www.w3schools.com/python/python_howto_reverse_string.asp
 
 #Prints out every second letter of the sentence in reverse order
-print (sentence[::2]) #[::2] prints our every second letter - https://stackoverflow.com/questions/20847205/program-to-extract-every-alternate-letters-from-a-string-in-python/20847220
+print (sentence[::2]) #[::2] prints out every second letter - https://stackoverflow.com/questions/20847205/program-to-extract-every-alternate-letters-from-a-string-in-python/20847220
